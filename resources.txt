@@ -1,0 +1,5 @@
+Perguntas e Respostas - Exame.
+
+- Return the rightmost 1 in the binary representation of a number ( passar de 1010 para 0010 ) : XOR (^) https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821
+- Return the only unmatched element in a array ([1,1,2,3,3] -> 1 ) : XOR (^) https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821
+- Write a function to determine the number of bits required to convert integer A to integer B. : XOR (^) https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821

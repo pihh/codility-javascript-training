@@ -4,6 +4,11 @@
 
 [TOC]
 
+### Notes
+This was actually the first algorithm that I had to research on how to solve it with 100% accurrency.
+I'd love to understand how a developer that didnt't came accross this specific problem could get to the conclusion that
+all slices are subsets of slices with length 2 or 3.
+Will update this repo it I find the answer to that.
 
 ### Strategy
 In order to solve this problem one has to assume that the following statement is true:

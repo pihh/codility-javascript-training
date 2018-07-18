@@ -49,7 +49,35 @@ function findMaxAverage(nums, k) {
 
 console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4));
 
-//
+// SIMPLE KADANE
+function kadane(arraySeq) {
+		let maxEndingHere = 0,
+				maxSoFar = 0;
+
+		arraySeq.forEach(function(el) {
+				maxEndingHere = Math.max(0,maxEndingHere + el);
+				maxSoFar = Math.max(maxSoFar, maxEndingHere);
+		});
+
+		return maxSoFar;
+}
+
+// KADANE TRACK
+function kadane(arraySeq) {
+	let track = [],
+		maxEndingHere = 0,
+		maxSoFar = 0;
+
+	arraySeq.forEach(function(el) {
+			maxEndingHere = Math.max(0,maxEndingHere + el);
+			maxSoFar = Math.max(maxSoFar, maxEndingHere);
+			track.push(maxSoFar);
+	});
+
+	return track;
+}
+
+// COMPLEX - MAX ENDING AND ARRAY AND INDEXES
 function kadane(arraySeq) {
     var maxEndingHere = 0,
         maxSoFar = 0,
@@ -75,4 +103,3 @@ function kadane(arraySeq) {
         sum: maxSoFar
     };
 }
-*/

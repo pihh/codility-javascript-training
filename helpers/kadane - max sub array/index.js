@@ -54,6 +54,7 @@ function kadane(arraySeq) {
 		let maxEndingHere = 0,
 				maxSoFar = 0;
 
+		// USED WITH SUCCESS instead of 0, el ! Without this kadanes with negatives might fail
 		arraySeq.forEach(function(el) {
 				maxEndingHere = Math.max(0,maxEndingHere + el);
 				maxSoFar = Math.max(maxSoFar, maxEndingHere);

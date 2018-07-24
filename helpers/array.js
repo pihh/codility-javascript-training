@@ -1,3 +1,48 @@
+// ARRAY CHUNK
+/**
+ * Define the chunk method in the prototype of an array
+ * that returns an array with arrays of the given size.
+ *
+ * @param chunkSize {Integer} Size of every group
+ * NOTE: SLOWER METHOD
+ */
+Object.defineProperty(Array.prototype, 'chunk', {
+    value: function(chunkSize) {
+        var that = this;
+        return Array(Math.ceil(that.length/chunkSize)).fill().map(function(_,i){
+            return that.slice(i*chunkSize,i*chunkSize+chunkSize);
+        });
+    }
+});
+
+// NOTE: FASTER METHOD
+function chunkArray(myArray, chunk_size){
+    var results = [];
+
+    while (myArray.length) {
+        results.push(myArray.splice(0, chunk_size));
+    }
+
+    return results;
+}
+
+// CHECK IF ARRAY CONTAINS 1 ELEMENT FROM OTHER ARRAY
+/**
+ * @description determine if an array contains one or more items from another array.
+ * @param {array} haystack the array to search.
+ * @param {array} arr the array providing items to check for in the haystack.
+ * @return {boolean} true|false if haystack contains at least one item from arr.
+ */
+var findOne = function (haystack, arr) {
+    return arr.some((v) => haystack.indexOf(v) >= 0);
+};
+
+
+// Split in group of 3 items
+var result = chunkArray([1,2,3,4,5,6,7,8], 3);
+// Outputs : [ [1,2,3] , [4,5,6] ,[7,8] ]
+console.log(result);
+
 // Unique values in array
 let uniques = [...new Set([])];
 

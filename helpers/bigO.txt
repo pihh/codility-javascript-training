@@ -1,2 +1,1 @@
 O(N*log(N)) - forLoop com um for loop que pode ter um breakline passa como O(N*log(N))
-

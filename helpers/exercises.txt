@@ -1,4 +1,6 @@
 
-GCD 
-Samantha has two pieces of cloth. One piece is 72 inches wide, and the other piece is 90 inches wide. She wants to cut both pieces into strips of equal width that are as wide as possible. How wide should she cut the strips?
-Bennie is catering a party and putting snack food on plates. He has 72 cheese puffs and 48 carrot sticks. He wants both kinds of food on each plate. He wants to distribute the food evenly and he doesn’t want any left over. What is the largest number of plates he can use. and how many of each type of food should he put on each plate?
+GCD & LCM
+- To solve space issues (to stock two quantities of different dimensions).
+- Helps to find commonality. 2*3=6, 3*2=6 as well, we can use either 2 three times or 3 two times to bring a six. Cases where you need to distribute, what if the same 10 chocolates were to be give to five kids instead of 2?
+- We find their use in measurements and construction fields.
+- If we have LCM and GCD, we can find the product of numbers.

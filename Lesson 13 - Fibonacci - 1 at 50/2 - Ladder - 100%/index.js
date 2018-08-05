@@ -18,6 +18,11 @@
 
     Adding f[i] = f[i] % MAX I bumped it to 100% at all.
     I don't understand the f[i] % MAX purpose in this algor
+
+    EDIT I do understan it now. the 50.000th fibo is a super huge number and JS
+      will add garbage. So , %30 solves that problem
+
+    STACK OVERFLOW Hope the last part about B[i] and max was intuitive to you; a better way to explain it is that % pow(2, i) is equivalent to extracting the first i bits in the binary pattern. So % max, which extracts 30 bits, does not affect the final result because % pow(2, B[i]) will also extract at most 30 bits.
  *
  */
 
